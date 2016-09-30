@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+    <title>Example</title>
+    <script src="document.min.js" userjs="user.js" icon="favicon.ico" id="DOC" onerror="var l=document.createElement('link'),s=document.createElement('script');l.rel='stylesheet';l.href='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css';l.id='bootstrap.css';l.auto='1';document.head.insertBefore(l,document.getElementById('DOC'));s.src='http://aplib.github.io/document.min.js';document.head.appendChild(s);"></script>
+</head>
+<body>
+
+<!--header-panel
+# EDAM Ontology
+Bioinformatics data types, data identifiers, formats, operations and topics
+-->
+
+<!--top-bar
+[navbar]
+* [Home](index.html)
+[/navbar]
+-->
+
+
+<!--content-panel
+EDAM is a simple ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use.
+
+EDAM is a community project and its development can be followed at [GitHub](https://github.com/edamontology/edamontology). Our core priority is to be responsive to end-users.  Please [read the docs](http://edamontologydocs.readthedocs.io/en/latest/).
+
+
+##   <a id="Viewing">Viewing</a>
+
+EDAM can be browsed here:
+
+*   [NCBO Ontology Browser (BioPortal)](http://bioportal.bioontology.org/ontologies/EDAM?p=classes)
+*   [EBI Ontology Look-up Service (OLS)]((http://www.ebi.ac.uk/ols/ontologies/edam)
+
+
+##   <a id="Download">Download</a>
+
+[http://edamontology.org/EDAM.owl](http://edamontology.org/EDAM.owl) (latest stable version)
+
+[https://github.com/edamontology/edamontology/releases](https://github.com/edamontology/edamontology/releases) (all versions)
+
+##   <a id="MailingLists">Mailing lists</a>
+
+Please subscribe:
+
+*   [http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam](http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam)  (announcements - minimal traffic!)
+*   [http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam-announce](http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam-announce)  (general discussions)
+
+Once subscribed, you can mail [edam@elixir-dk.org](mailto:edam@elixir-dk.org>).
+
+
+##   <a id="Scope">Scope</a>
+
+EDAM includes 4 main sub-ontologies or 'branches' of concepts:
+
+*   _**Data**_ - “Information, represented in an information artefact (data record) that is 'understandable' by dedicated computational tools that can use the data as input or produce it as output.”
+*   _**Format**_ - “A defined way or layout of representing and structuring data in a computer file, blob, string, message, or elsewhere.”
+*   _**Operation**_ - “A function that processes a set of inputs and results in a set of outputs, or associates arguments (inputs) with values (outputs).”
+*   _**Topic**_ - “A category denoting a rather broad domain or field of interest, of study, application, work, data, or technology. Topics have no clearly defined borders between each other.”
+
+Noteworthy sub-branch:
+*   _**Data->Identifier**_ - “A text token, number or something else which identifies an entity, but which may not be persistent (stable) or unique (the same identifier may identify multiple things).”
+
+![EDAM concepts](EDAMconcepts.png)
+
+_**EDAM concepts. Boxes indicate top-level concepts (sub-ontologies) in EDAM.**_
+
+As a general rule, the _**Data**_, _**Format**_, and _**Operation**_ branches include concepts strictly in domain of bioinformatics and computational biology: concepts purely concerning biology, computer science _etc._ are not included. The _**Topic**_ branch includes broader inter-disciplinary concepts from the biological and medical domains.
+
+
+
+##   <a id="Architecture">Architecture</a>
+
+EDAM has 3 components:
+
+*   [Concepts](concepts.html) - All concepts have a name (the term or label) and definition. Further, a concept may have simple relations to other EDAM concepts, as well other intrinsic properties, _e.g._ an identifier may have a regular expression defining its syntax.
+*   [Hierarchy](relations.html#is_a) - Every concept (excluding top-level concepts) is related to one or more other concepts within the same branch by an _**is a**_ relation (specialisation). Hence EDAM has 4 primary hierarchies (for _Data_, _Format_, _Operation_, and _Topic_).
+*   [Relations](relations.html) - Concepts are related by defined relation types (see below), which reflect well established or self-evident principles, and are used primarily to define internal consistency of EDAM.
+
+![EDAM relations](EDAMrelations.png)
+
+**EDAM architecture is very simple. Boxes indicate top-level concepts (sub-ontologies), and lines indicate types of relations.
+
+
+##   <a id="License">Licence</a>
+
+[![Creative Commons Licence](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)  
+[EDAM](http://edamontology.org) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0).
+
+We recommend, however, that while EDAM is being actively maintained by its authors, substantial derived work, major modifications (especially conceptual and semantic), and re-definitions of concepts and other content (_e.g._ additional constraints on EDAM concepts/`owl:Class`-es within `owl:imports` meant with universal validity, that would "close" some desired options of the open-world assumption) are consulted with the EDAM core developers beforehand at the time of consideration, and consistent solutions are sought in collaboration.
+
+##   <a id="Publications">Publication</a>
+
+EDAM is described in the following article. If you use EDAM or its part, please reference:
+
+Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). [EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats](http://bioinformatics.oxfordjournals.org/content/29/10/1325.full). _Bioinformatics_, **29**(10): 1325-1332.  
+<small>doi: [10.1093/bioinformatics/btt113](http://dx.doi.org/10.1093/bioinformatics/btt113)   PMID: [23479348](http://www.ncbi.nlm.nih.gov/pubmed/23479348)</small>
+
+The article is freely available (Open Access).
+
+* * *
+
+-->
+
+<!--footer-panel
+-->
+
+<noscript><div class="alert alert-warning">This Website requires your browser to be JavaScript enabled.</div></noscript>
+</body>
+</html>
