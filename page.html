@@ -1,11 +1,16 @@
+<!--Processing Instructions and the XML Declaration are both forbidden in polyglot markup. [http://www.w3.org/TR/html-polyglot]-->
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta charset="utf-8">
-    <title>EDAM: Ontology of bioinformatics operations, types of data, formats, and topics</title>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!--In HTML documents, elements in the HTML namespace may have an xmlns attribute specified, if, and only if, it has the exact value "http://www.w3.org/1999/xhtml". [http://www.w3.org/TR/html5/dom.html#global-attributes]-->
+	<head>
+		<title>EDAM: Ontology of bioinformatics operations, types of data, formats, and topics</title>
+		<!--<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8"/> ... polyglot markup does not use the http-equiv="Content-Type" declaration on the meta element. [http://dev.w3.org/html5/html-xhtml-author-guide]-->
+		<!--<meta charset="UTF-8"/> not valid in XHTML?-->
+		<link rel="alternate" type="application/rdf+xml; charset=utf-8" title="OWL representation of EDAM" href="http://edamontology.org/EDAM.owl"/>
+		<link rel="alternate" type="text/plain" title="OBO-format representation of EDAM" href="http://edamontology.org/EDAM.obo"/>
     <script src="document.min.js" userjs="user.js" icon="favicon.ico" id="DOC" onerror="var l=document.createElement('link'),s=document.createElement('script');l.rel='stylesheet';l.href='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css';l.id='bootstrap.css';l.auto='1';document.head.insertBefore(l,document.getElementById('DOC'));s.src='http://aplib.github.io/document.min.js';document.head.appendChild(s);"></script>
-</head>
-<body>
+	</head>
+	<body>
 
 <!--header-panel
 # EDAM Ontology
@@ -105,6 +110,6 @@ The article is freely available (Open Access).
 <!--footer-panel
 -->
 
-<noscript><div class="alert alert-warning">This Website requires your browser to be JavaScript enabled.</div></noscript>
-</body>
+		<noscript><div class="alert alert-warning">This Website requires your browser to be JavaScript enabled.</div></noscript>
+	</body>
 </html>
