@@ -1,29 +1,31 @@
-<!--Processing Instructions and the XML Declaration are both forbidden in polyglot markup. [http://www.w3.org/TR/html-polyglot]-->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<!--In HTML documents, elements in the HTML namespace may have an xmlns attribute specified, if, and only if, it has the exact value "http://www.w3.org/1999/xhtml". [http://www.w3.org/TR/html5/dom.html#global-attributes]-->
-	<head>
-		<title>EDAM: Ontology of bioinformatics operations, types of data, formats, and topics</title>
-		<!--<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8"/> ... polyglot markup does not use the http-equiv="Content-Type" declaration on the meta element. [http://dev.w3.org/html5/html-xhtml-author-guide]-->
-		<!--<meta charset="UTF-8"/> not valid in XHTML?-->
-		<link rel="alternate" type="application/rdf+xml; charset=utf-8" title="OWL representation of EDAM" href="http://edamontology.org/EDAM.owl"/>
-		<link rel="alternate" type="text/plain" title="OBO-format representation of EDAM" href="http://edamontology.org/EDAM.obo"/>
-		<script src="document.min.js" userjs="user.js" icon="favicon.ico" id="DOC" onerror="var l=document.createElement('link'),s=document.createElement('script');l.rel='stylesheet';l.href='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css';l.id='bootstrap.css';l.auto='1';document.head.insertBefore(l,document.getElementById('DOC'));s.src='http://aplib.github.io/document.min.js';document.head.appendChild(s);"></script>
-	</head>
-	<body>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+    <title>Example</title>
+    <script src="document.min.js" userjs="user.js" icon="favicon.ico" id="DOC" onerror="var l=document.createElement('link'),s=document.createElement('script');l.rel='stylesheet';l.href='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css';l.id='bootstrap.css';l.auto='1';document.head.insertBefore(l,document.getElementById('DOC'));s.src='http://aplib.github.io/document.min.js';document.head.appendChild(s);"></script>
+</head>
+<body>
 
 <!--header-panel
 # EDAM Ontology
-Bioinformatics operations, types of data, data identifiers, data formats, and topics
+Bioinformatics data types, data identifiers, formats, operations and topics
 -->
+
+<!--top-bar
+[navbar]
+* [Home](index.html)
+[/navbar]
+-->
+
 
 <!--content-panel
 EDAM is a simple ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use.
 
-EDAM is a community project and its development can be followed at [GitHub](https://github.com/edamontology/edamontology). Our core priority is to be responsive to end-users.  Please read the [documentation](http://edamontologydocs.readthedocs.io/en/latest/).
+EDAM is a community project and its development can be followed at [GitHub](https://github.com/edamontology/edamontology). Our core priority is to be responsive to end-users.  Please [read the docs](http://edamontologydocs.readthedocs.io/en/latest/).
 
 
-##   <a id="Viewing"></a>Viewing
+##   <a id="Viewing">Viewing</a>
 
 EDAM can be browsed here:
 
@@ -31,36 +33,23 @@ EDAM can be browsed here:
 *   [EBI Ontology Look-up Service (OLS)]((http://www.ebi.ac.uk/ols/ontologies/edam)
 
 
-##   <a id="Download"></a>Download
+##   <a id="Download">Download</a>
 
-<b>[http://edamontology.org/EDAM_1.15.owl](http://edamontology.org/EDAM_1.15.owl)</b> (The latest stable version is at the moment <b>1.15</b>)
+[http://edamontology.org/EDAM.owl](http://edamontology.org/EDAM.owl) (latest stable version)
 
-<b>[http://edamontology.org/EDAM.owl](http://edamontology.org/EDAM.owl)<b> (Always the latest stable version, in OWL format)
+[https://github.com/edamontology/edamontology/releases](https://github.com/edamontology/edamontology/releases) (all versions)
 
-[http://edamontology.org/EDAM.obo](http://edamontology.org/EDAM.obo) (The last version available in OBO format is unfortunately <b>1.2</b>. Because the conversion from OWL to OBO hasn't yet fully been automated for EDAM, we will only resume providing OBO format in case of substantial demand.)
+##   <a id="MailingLists">Mailing lists</a>
 
-[https://github.com/edamontology/edamontology/releases](https://github.com/edamontology/edamontology/releases) (All stable releases of EDAM)
-
-[https://raw.githubusercontent.com/edamontology/edamontology/master/EDAM_dev.owl](https://raw.githubusercontent.com/edamontology/edamontology/master/EDAM_dev.owl) (Unstable development version)
-
-
-
-##   <a id="Contacts"></a>Contacts
-
-
-<b>Twitter:</b> [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fedamontology.org&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
-
-All development, and the preferred request and discussion channel is <b>GitHub:</b> [https://github.com/edamontology/edamontology](https://github.com/edamontology/edamontology)
-
-<a id="MailingLists"></a>Please subscribe to our <b>mailing lists:</b>
+Please subscribe:
 
 *   [http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam](http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam)  (announcements - minimal traffic!)
 *   [http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam-announce](http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam-announce)  (general discussions)
 
-Once subscribed, you can email [edam@elixir-dk.org](mailto:edam@elixir-dk.org>).
+Once subscribed, you can mail [edam@elixir-dk.org](mailto:edam@elixir-dk.org>).
 
 
-##   <a id="Scope"></a>Scope
+##   <a id="Scope">Scope</a>
 
 EDAM includes 4 main sub-ontologies or 'branches' of concepts:
 
@@ -80,7 +69,7 @@ As a general rule, the _**Data**_, _**Format**_, and _**Operation**_ branches in
 
 
 
-##   <a id="Architecture"></a>Architecture
+##   <a id="Architecture">Architecture</a>
 
 EDAM has 3 components:
 
@@ -93,16 +82,16 @@ EDAM has 3 components:
 **EDAM architecture is very simple. Boxes indicate top-level concepts (sub-ontologies), and lines indicate types of relations.
 
 
-##   <a id="License"></a>Licence
+##   <a id="License">Licence</a>
 
 [![Creative Commons Licence](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)  
 [EDAM](http://edamontology.org) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0).
 
 We recommend, however, that while EDAM is being actively maintained by its authors, substantial derived work, major modifications (especially conceptual and semantic), and re-definitions of concepts and other content (_e.g._ additional constraints on EDAM concepts/`owl:Class`-es within `owl:imports` meant with universal validity, that would "close" some desired options of the open-world assumption) are consulted with the EDAM core developers beforehand at the time of consideration, and consistent solutions are sought in collaboration.
 
-##   <a id="Publications"></a>Publication
+##   <a id="Publications">Publication</a>
 
-EDAM is described in the following article. If you use, or refer to EDAM or its part, please reference:
+EDAM is described in the following article. If you use EDAM or its part, please reference:
 
 Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). [EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats](http://bioinformatics.oxfordjournals.org/content/29/10/1325.full). _Bioinformatics_, **29**(10): 1325-1332.  
 <small>doi: [10.1093/bioinformatics/btt113](http://dx.doi.org/10.1093/bioinformatics/btt113)   PMID: [23479348](http://www.ncbi.nlm.nih.gov/pubmed/23479348)</small>
@@ -114,9 +103,8 @@ The article is freely available (Open Access).
 -->
 
 <!--footer-panel
-<small>Last update: 2016-Oct-04</small>
 -->
 
-		<noscript><div class="alert alert-warning">This Website requires your browser to be JavaScript enabled.</div></noscript>
-	</body>
+<noscript><div class="alert alert-warning">This Website requires your browser to be JavaScript enabled.</div></noscript>
+</body>
 </html>
