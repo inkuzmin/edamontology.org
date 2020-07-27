@@ -1,9 +1,14 @@
 branches:
   only:
-  - master
-  - dev
+    - master
 sudo: false
 language: ruby
+cache: bundler
+install:
+  - git config user.email "inkuzm@gmail.com"
+  - git config user.name "Travis CI"
+script:
+  - ./build.sh
 env:
   global:
     secure: ZK8LlsUFVhpPxYsEO52dRClQtuFhHVTYaT8Xj7X04IXA6dTpqfDkEVxHzdqvHThxvcpayNSbggiDkxCyc2unbs1vd++9d2avr56COSN7gK8ZIeOQOZ3IH8Ndgd6Y7rt5JlbQh2h0BrOd0bD5BOXLKxi87l/FVQ/t8+wnogKSgzjmeEHBAK9spRVUzQmsZ6UwChgppnVeYNgr6EdLGMnoxFOnLIIOPcgxEHeKbWsAKAXYXClVvF6vuYPBby/tAxTlIZ2GbGlgzXvhTABX38YwvGapU3ijChQs5RIydk52J8gI4LAdITuH+oyg0WlYqmA7G54HBJ/iIZv2kMQwja+S7q7DjP9OfRG0eQwbzDdwi5dNlW42I8cbvG/wflJxS4PqZ1aC9E9pTUrFRwwRf9/O5SzY+e9Ye0kZiShAt3msQUxOfTj+hYgWFxFpK6iZucizNDiiw/ABCtjCpVDUqgYgQhhpr2d7E5RyBl2w74cv7FR7lesW7VJ3IwvGNq/X1Q4FIWiFCZBeRjz/8hBMrRhOx+VrmsJvDPXOc6LSo/uC/COQQHYdeSw9Ert08uCyzbo8wcLl5B+YZTkoh0HHu2zqnXclx3xiLSGYblChny63ThmTEEW9MhONEud6ixVF2f+BjUuLwInITQoJTSEaQga4i5p5oD+U/dWFo0gw09VdNWI=
