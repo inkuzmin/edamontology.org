@@ -13,7 +13,7 @@ organised into a simple and intuitive hierarchy for convenient use.
 EDAM is a community project and its development can be followed at [GitHub](https://github.com/edamontology/edamontology).
 Our core priority is to be responsive to end-users.  Please read the [documentation](http://edamontologydocs.readthedocs.io/en/latest/).
 
-## <a class="link" id="Viewing" href="#Viewing"><img class="link-icon" src="/assets/link-solid.svg" /></a>Viewing
+## <a class="link" id="Viewing" href="#Viewing"><img class="link-icon" src="{{ "/assets/link-solid.svg"  | relative_url }}" /></a>Viewing
 
 EDAM can be graphically browsed online at:
 
@@ -32,7 +32,7 @@ EDAM can be graphically browsed online at:
     *   [EDAM-bioimaging live development version (alpha03_dev)](https://webprotege.stanford.edu/#projects/2ce704bf-83ed-4d2e-985f-84c4841fac71/edit/Classes)
 
 
-## <a class="link" id="Download" href="#Download"><img class="link-icon" src="/assets/link-solid.svg" /></a>Downloads
+## <a class="link" id="Download" href="#Download"><img class="link-icon" src="{{ "/assets/link-solid.svg"  | relative_url }}" /></a>Downloads
 [<b>http://edamontology.org/EDAM_1.25.owl</b>](http://edamontology.org/EDAM_1.25.owl) (The latest stable version is at the moment <b>1.25</b>)
 
 [<b>http://edamontology.org/EDAM_1.24.owl</b>](http://edamontology.org/EDAM_1.24.owl) (The latest stable version is at the moment <b>1.24</b>)
@@ -54,13 +54,13 @@ EDAM can be graphically browsed online at:
 [https://raw.githubusercontent.com/edamontology/edamontology/master/EDAM_dev.owl](https://raw.githubusercontent.com/edamontology/edamontology/master/EDAM_dev.owl) (Unstable development version)
 
 
-## <a class="link" id="Documentation" href="#Documentation"><img class="link-icon" src="/assets/link-solid.svg" /></a>Documentation
+## <a class="link" id="Documentation" href="#Documentation"><img class="link-icon" src="{{ "/assets/link-solid.svg"  | relative_url }}" /></a>Documentation
 
 Comprehensive documentation and guidelines are available via [readthedocs](http://edamontologydocs.readthedocs.io/en/latest/index.html) (maintained [here](http://edamontologydocs.readthedocs.io/en/latest/)).
 
 
 
-## <a class="link" id="Contacts" href="#Contacts"><img class="link-icon" src="/assets/link-solid.svg" /></a>Contacts
+## <a class="link" id="Contacts" href="#Contacts"><img class="link-icon" src="{{ "/assets/link-solid.svg"  | relative_url }}" /></a>Contacts
 
 
 <b>Twitter:</b> [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fedamontology.org&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
@@ -73,7 +73,7 @@ All development, and the preferred request and discussion channel is <b>GitHub:<
 *   [http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam](http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam)  (General discussions. Once subscribed, you can email [edam@elixir-dk.org](mailto:edam@elixir-dk.org>))
 
 
-## <a class="link" id="Scope" href="#Scope"><img class="link-icon" src="/assets/link-solid.svg" /></a>Scope
+## <a class="link" id="Scope" href="#Scope"><img class="link-icon" src="{{ "/assets/link-solid.svg"  | relative_url }}" /></a>Scope
 
 EDAM includes 4 main sub-ontologies or 'branches' of concepts:
 
@@ -85,7 +85,7 @@ EDAM includes 4 main sub-ontologies or 'branches' of concepts:
 Noteworthy sub-branch:
 *   _**Data->Identifier**_ - “A text token, number or something else which identifies an entity, but which may not be persistent (stable) or unique (the same identifier may identify multiple things).”
 
-<img alt="EDAM concepts" src="/assets/EDAMconcepts.png" style="max-height: 36em; max-width: 94%">
+<img alt="EDAM concepts" src="{{ "/assets/EDAMconcepts.png" | relative_url }}" style="max-height: 36em; max-width: 94%">
 
 _**EDAM concepts.** Boxes indicate sub-ontologies in EDAM, with example concepts._
 
@@ -93,7 +93,7 @@ As a general rule, the _**Data**_, _**Format**_, and _**Operation**_ branches in
 
 
 
-## <a class="link" id="Architecture" href="#Architecture"><img class="link-icon" src="/assets/link-solid.svg" /></a>Architecture
+## <a class="link" id="Architecture" href="#Architecture"><img class="link-icon" src="{{ "/assets/link-solid.svg"  | relative_url }}" /></a>Architecture
 
 EDAM has 3 components:
 
@@ -101,19 +101,19 @@ EDAM has 3 components:
 *   [Hierarchy](relations.html#is_a) - Every concept (excluding top-level concepts) is related to one or more other concepts within the same branch by an _**is a**_ relation (specialisation). Hence EDAM has 4 primary hierarchies (for _Data_, _Format_, _Operation_, and _Topic_).
 *   [Relations](relations.html) - Concepts are related by defined relation types (see illustration below), which reflect well established or self-evident principles, and are used to define internal consistency of EDAM.
 
-<img alt="EDAM relations" src="/assets/EDAMrelations.png" style="max-height: 36em; max-width: 94%">
+<img alt="EDAM relations" src="{{ "/assets/EDAMrelations.png" | relative_url }}" style="max-height: 36em; max-width: 94%">
 
 _**EDAM architecture is simple.** Boxes indicate top-level concepts (sub-ontologies), and lines indicate types of relations._
 
 
-## <a class="link" id="Licence" href="#Licence"><img class="link-icon" src="/assets/link-solid.svg" /></a>Licence
+## <a class="link" id="Licence" href="#Licence"><img class="link-icon" src="{{ "/assets/link-solid.svg"  | relative_url }}" /></a>Licence
 
 [![Creative Commons Licence](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 [EDAM](http://edamontology.org) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0).
 
 We recommend, however, that while EDAM is being actively maintained by its authors, substantial derived work, major modifications (especially conceptual and semantic), and re-definitions of concepts and other content (_e.g._ additional constraints on EDAM concepts/`owl:Class`-es within `owl:imports` meant with universal validity, that would "close" some desired options of the open-world assumption) are consulted with the EDAM core developers beforehand at the time of consideration, and consistent solutions are sought in collaboration.
 
-## <a class="link" id="Publications" href="#Publications"><img class="link-icon" src="/assets/link-solid.svg" /></a>Publications
+## <a class="link" id="Publications" href="#Publications"><img class="link-icon" src="{{ "/assets/link-solid.svg"  | relative_url }}" /></a>Publications
 
 EDAM is described in the following article. If you use, or refer to EDAM or its part, please cite:
 
