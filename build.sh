@@ -4,7 +4,7 @@ set -ev
 
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
     bundle install
-    bundle exec jekyll
+    bundle exec jekyll build
 
     if [ "$TRAVIS_BRANCH" = "master" ]; then
         git clone --branch gh-pages https://${GH_TOKEN}@github.com/$TRAVIS_REPO_SLUG.git ./output
