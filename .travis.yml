@@ -1,0 +1,6 @@
+branches:
+  only:
+  - master
+  - dev
+sudo: false
+language: ruby
